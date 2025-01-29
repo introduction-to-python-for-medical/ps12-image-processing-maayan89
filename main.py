@@ -2,7 +2,7 @@
 from PIL import Image
 import numpy as np
 from scipy.ndimage import convolve
-from image_utils.py import load_image, edge_detection
+from image_utils import load_image, edge_detection
 from skimage.filters import median
 from skimage.morphology import ball
 import matplotlib.pyplot as plt
