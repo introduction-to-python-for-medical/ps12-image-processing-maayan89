@@ -21,10 +21,10 @@ def binary_img(edges, threshold):
 
 def save_binary_img (Img, Img_name):
   edge_img = Image.fromarray(Img*255)
-  edge_img.save(img_name)
+  edge_img.save(Img_name)
 
 image_array = load_image('dogs.jpg')
-clean_img = supress_noise(image_array)
+clean_img = suppress_noise(image_array)
 edges = detect_edges(clean_img)
 binary_edges = binary_img(edges, threshold=50)
 save_binary_img(binary_edges, 'my_edges.png')
