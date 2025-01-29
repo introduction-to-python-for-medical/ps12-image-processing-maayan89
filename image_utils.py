@@ -1,6 +1,6 @@
 from PIL import Image
 import numpy as np
-from scipy.signal import convolve2d
+from scipy.ndimage import convolve
 
 def load_image(image_path):
     image = Image.open(image_path)
